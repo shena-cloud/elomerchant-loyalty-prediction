@@ -34,8 +34,8 @@ This app predicts the **Customer Loyalty Score**!
 
 train = pd.read_csv('train.csv')
 
-card_id = st.selectbox(label = 'Card id', options = train['card_id'])
-date = pd.to_datetime(st.selectbox(label = 'First active month', options = train['first_active_month']))
+card_id = st.selectbox(label = 'Card id', options = train['card_id'][:50])
+date = pd.to_datetime(st.selectbox(label = 'First active month', options = train['first_active_month'][:50]))
 f1 = st.selectbox(label = 'Feature 1', options= [1,2,3,4,5])
 f2 = st.selectbox(label = 'Feature 2', options= [1,2,3])
 f3 = st.selectbox(label = 'Feature 3', options= [0,1])
