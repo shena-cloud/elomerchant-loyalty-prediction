@@ -1,22 +1,8 @@
 import streamlit as st
 import pandas as pd
-from tqdm import tqdm
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.model_selection import train_test_split
-import math
-from sklearn.model_selection import RandomizedSearchCV, KFold, StratifiedKFold
-from sklearn.neighbors import KNeighborsRegressor
 from sklearn.metrics import mean_squared_error
-from sklearn.linear_model import SGDRegressor
-from sklearn.linear_model import Ridge
-from sklearn.linear_model import Lasso
-from sklearn.svm import SVR
 import lightgbm as lgbm
-from sklearn.tree import DecisionTreeRegressor
-from sklearn.linear_model import LinearRegression
 import datetime
 import gc
 from PIL import Image
